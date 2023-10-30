@@ -4,7 +4,9 @@ Created on Fri Oct 27 13:36:45 2023
 
 @author: ila
 """
-# ## 42577 Introduction to Business Analytics
+# ## 42577 Introduction to Business Analytics 
+
+##test breyting
 
 
 import pandas as pd
