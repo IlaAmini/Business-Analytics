@@ -15,18 +15,9 @@ from DataLoader import DataLoader
 
 import matplotlib.pyplot as plt
 
-#matplotlib style options
-plt.style.use('ggplot')
-plt.rcParams['figure.figsize'] = (15, 8)
-
-plt.style.use('ggplot')
-plt.rcParams['figure.figsize'] = (15, 8)
-
 
 # read the existing subset of the data
 df = DataLoader.read_data('Trips_subset.csv')
-# Display few variables
-df.head(8).T 
 
 
 """ data description """ 
