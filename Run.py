@@ -36,21 +36,21 @@ print("data correlation = \n")
 df.corr()
 
 
-""" Gender """
+# Gender
 print(f"available values (classes) for the gender column = {df['gender'].unique()}")
 print(f" the length data where gender=0: {len(df[df['gender']==0])}")
 print(f" the length data where gender=1: {len(df[df['gender']==1])}")
 print(f" the length data where gender=2: {len(df[df['gender']==2])}")
 
 
-""" usertype """
+# usertype
 print(f"available values (classes) for the gender column = {df['usertype'].unique()}")
 print(f" the length data where usertype=Subscriber: {len(df[df['usertype']=='Subscriber'])}")
 print(f" the length data where usertype=Customer: {len(df[df['usertype']=='Customer'])}")
 
 
 
-# ## Data prep
+# Data prep
 
 # Convert a datetime column to datetime data type
 df['starttime'] = pd.to_datetime(df['starttime'])
@@ -68,7 +68,7 @@ df.head()
 
 # # Data visualization
 
-# ### Gender
+# Gender
 # Let's visualize the gender distribution. We have three categories; 1, 2, and 0. 1 represents men, 2 represents women and 0 are users that did not declare their gender.
 
 # Create a bar plot for the "gender" column
