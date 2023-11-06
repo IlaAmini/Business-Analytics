@@ -19,7 +19,9 @@ import matplotlib.pyplot as plt
 
 
 # read the existing subset of the data
-df = DataLoader.read_data('Trips_subset.csv')
+path = "\Final Project\Trips_2018\Trips_2018.csv" #Ila
+sub_path = 'Trips_subset.csv'
+df = DataLoader.read_data(path)
 
 
 """ data description """ 
