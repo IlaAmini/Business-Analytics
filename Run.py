@@ -8,6 +8,12 @@ Created on Fri Oct 27 13:36:45 2023
 
 ##test breyting
 
+"""
+    - datetime format has a mili-sec as well. What would you do about it?
+    - See the correlation between different variables to see which one can help predicting the other
+    - Standardize the data
+"""
+
 
 import pandas as pd
 import numpy as np
