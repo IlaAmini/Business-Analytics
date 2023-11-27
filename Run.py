@@ -4,7 +4,9 @@ Created on Fri Oct 27 13:36:45 2023
 
 @author: ila
 """
-# ## 42577 Introduction to Business Analytics
+# ## 42577 Introduction to Business Analytics 
+
+##test breyting
 
 """
     - datetime format has a mili-sec as well. What would you do about it?
@@ -23,7 +25,9 @@ import matplotlib.pyplot as plt
 
 
 # read the existing subset of the data
-df = DataLoader.read_data('Trips_subset.csv')
+path = "\Final Project\Trips_2018\Trips_2018.csv" #Ila
+sub_path = 'Trips_subset.csv'
+df = DataLoader.read_data(path)
 
 
 """ data description """ 
@@ -42,21 +46,21 @@ print("data correlation = \n")
 df.corr()
 
 
-""" Gender """
+# Gender
 print(f"available values (classes) for the gender column = {df['gender'].unique()}")
 print(f" the length data where gender=0: {len(df[df['gender']==0])}")
 print(f" the length data where gender=1: {len(df[df['gender']==1])}")
 print(f" the length data where gender=2: {len(df[df['gender']==2])}")
 
 
-""" usertype """
+# usertype
 print(f"available values (classes) for the gender column = {df['usertype'].unique()}")
 print(f" the length data where usertype=Subscriber: {len(df[df['usertype']=='Subscriber'])}")
 print(f" the length data where usertype=Customer: {len(df[df['usertype']=='Customer'])}")
 
 
 
-# ## Data prep
+# Data prep
 
 # Convert a datetime column to datetime data type
 df['starttime'] = pd.to_datetime(df['starttime'])
@@ -74,7 +78,7 @@ df.head()
 
 # # Data visualization
 
-# ### Gender
+# Gender
 # Let's visualize the gender distribution. We have three categories; 1, 2, and 0. 1 represents men, 2 represents women and 0 are users that did not declare their gender.
 
 # Create a bar plot for the "gender" column
